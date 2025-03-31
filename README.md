@@ -1,63 +1,135 @@
-# Tax_Savvy
-# Project Title
-Taxsavvyy
+# TaxSavvy
 
 ## Description
-This project is designed to provide various features related to tax savings, budgeting and financial insights. It includes a backend server for handling requests and a frontend application for user interaction.
+Taxsavvyy is a project designed to provide various features related to tax savings, budgeting, and financial insights. It includes:
+
+- A backend server for handling requests.
+- A frontend application for user interaction.
+- An AI chatbot for answering tax-related queries.
 
 ## Installation
-To install the project, clone the repository and run the following commands:
 
-### Backend
-1. Navigate to the Backend directory:
-   bash
-   cd Backend
-   
-2. Install dependencies:
-   bash
-   npm install
-   
+### Prerequisites
+- Node.js (for frontend & backend)
+- Python (for AI chatbot)
+- MySQL (for database)
+- MongoDB (for user and tax data storage)
 
-### Frontend
-1. Navigate to the frontend directory:
-   bash
-   cd frontend
-   
-2. Install dependencies:
-   bash
-   npm install
-   
+### Clone the Repository
+Run the following command to clone the project:
+
+bash
+git clone (repo link)
+cd Taxsavvyy
+
+
+### Backend Setup
+Navigate to the Backend directory:
+
+bash
+cd Backend
+
+
+Install dependencies:
+
+bash
+npm install
+
+
+Download the TaxSavvy.sql file from the repository.
+
+Create a MySQL database named TaxSavvy:
+
+sql
+CREATE DATABASE TaxSavvy;
+
+
+Import the database structure:
+
+bash
+mysql -u username -p TaxSavvy < path/to/TaxSavvy.sql
+
+
+Create a .env file in the Backend directory and add the following:
+
+ini
+DATABASE_URL=your_database_connection_string
+API_KEY=your_api_key
+
+
+### MongoDB Setup
+1. Install MongoDB on your machine.
+2. Create a new database named TaxSavvyDB.
+3. Update your .env file with the MongoDB connection string:
+
+ini
+MONGODB_URL=your_mongodb_connection_string
+
+
+### Frontend Setup
+Navigate to the Frontend directory:
+
+bash
+cd frontend
+
+
+Install dependencies:
+
+bash
+npm install
+
 
 ## Usage
-To start the application, follow these steps:
 
-### Backend
-1. Navigate to the Backend directory:
-   bash
-   cd Backend
-   
-2. Start the backend server:
-   bash
-   node server.js
-   
-3. To run the AI chatbot, execute:
-   bash
-   python AIchatbot/app.py
-   
+### Running the Backend
+Navigate to the Backend directory:
 
-### Frontend
-1. Navigate to the frontend directory:
-   bash
-   cd frontend
-   
-2. Start the frontend application:
-   bash
-   npm start
-   
+bash
+cd Backend
 
-Visit http://localhost:3000 in your browser to access the application.
+
+Start the backend server:
+
+bash
+node server.js
+
+
+To run the AI chatbot:
+
+bash
+python AIchatbot/app.py
+
+
+### Running the Frontend
+Navigate to the Frontend directory:
+
+bash
+cd frontend
+
+
+Start the frontend application:
+
+bash
+npm start
+
+
+Open your browser and visit:
+
+
+http://localhost:3000
+
 
 ## Environment Variables
-Make sure to set the following environment variables:
-- DATABASE_URL: URL for the database connection.
-- API_KEY: Your API key for external services.
+Ensure the following environment variables are set:
+
+ini
+DATABASE_URL=your_database_connection_string
+API_KEY=your_api_key
+MONGODB_URL=your_mongodb_connection_string
+
+
+Replace your_database_connection_string with your MySQL connection string.
+
+Replace your_api_key with the necessary API key.
+
+Replace your_mongodb_connection_string with your MongoDB connection string.
