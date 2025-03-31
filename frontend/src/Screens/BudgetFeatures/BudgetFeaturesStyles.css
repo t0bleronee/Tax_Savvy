@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+:root {
+    --primary-color: #4FD1A5;
+    --dark-shade: #217A5D;
+    --accent-green: #4FD1A5;
+    --secondary-green: #A8D8D3;
+    --highlight-teal: #A8D8D3;
+}
+
+body, html {
+    font-family:'EB Garamond', serif;
+    overflow-x: hidden;
+}
+
+.ufx-unique-container {
+    font-family:'EB Garamond', serif;
+    display: flex;
+    flex: 1;
+    background: linear-gradient(to bottom right, #4FD1A5, #A8D8D3);
+}
+
+.ufx-unique-content {
+    font-family:'EB Garamond', serif;
+    margin-left: calc(20vw + 20px);
+    padding: 30px;
+    background: linear-gradient(to bottom right, #4FD1A5, #A8D8D3);
+    box-sizing: border-box;
+    
+}
+
+.ufx-unique-h2 {
+    font-size: 23px;
+    font-family:'EB Garamond', serif;
+}
+
+.ufx-unique-h3 {
+    font-size: 17px;
+    font-family:'EB Garamond', serif;
+}
+
+.stats {
+    display: flex;
+    gap: 10px;
+}
+
+.stat-box {
+    background: var(--highlight-teal);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--dark-shade);
+}
+
+label section .categories {
+    color: white;
+}
+
+.ufx-unique-sidebar {
+    overflow-y: auto;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: var(--dark-shade);
+    color: white;
+    padding: 85px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 14px;
+    flex-shrink: 0;
+    font-family:'EB Garamond', serif;
+}
+
+.ufx-unique-sidebar select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border: 1px solid var(--highlight-teal);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: var(--dark-shade);
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.ufx-unique-sidebar select:hover {
+    border-color: var(--secondary-green);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ufx-unique-sidebar select:focus {
+    outline: none;
+    border-color: var(--accent-green);
+    box-shadow: 0px 0px 10px rgba(28, 46, 74, 0.5);
+}
+
+.ufx-unique-sidebar select option:hover,
+.ufx-unique-sidebar select option:checked {
+    background-color:var(--accent-green) ;
+    color: white;
+}
+
+.ufx-unique-sidebar select:hover {
+    border-color: var(--secondary-green);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ufx-unique-sidebar select option {
+    background: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.ufx-unique-content {
+    margin-left: 270px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    font-family:'EB Garamond', serif;
+}
+
+@media (max-width: 768px) {
+    .ufx-unique-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .ufx-unique-content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ufx-unique-sidebar {
+        width: 250px;
+    }
+    .ufx-unique-content {
+        margin-left: 270px;
+    }
+}
+
+/* Smooth Hover Effects */
+select,
+button {
+    transition: 0.3s ease-in-out;
+}
+
+select:hover,
+button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* ---------------- Typewriter Effect for Heading ---------------- */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.ufx-unique-h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2s steps(30, end) forwards;
+    font-weight: 600;
+    color: black;
+    font-family: 'EB Garamond', serif;
+}
+
+
+#ufx-unique-features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family:'EB Garamond', serif;
+}
+
+.ufx-unique-feature-item {
+    font-family:'EB Garamond', serif;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family:'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.ufx-unique-close-modal{
+    background-color: #4FD1A5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Feature Cards */
+.ufx-unique-feature-card {
+    font-family:'EB Garamond', serif;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.ufx-unique-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ufx-unique-h2 {
+    font-family:'EB Garamond', serif;
+    font-weight: 600;
+}
+
+.ufx-unique-feature-card {
+    font-family:'EB Garamond', serif;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.ufx-unique-feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.overlay {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 9999;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Updated Modal */
+.ufx-unique-modal {
+    display: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    max-width: 95%;
+    max-height: 80vh;
+    background: white;
+    border-radius: 12px;
+    overflow-y: auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+    z-index: 10000;
+}
+
+.ufx-unique-accordion-item.active .ufx-unique-accordion-content {
+    padding: 1rem 1.5rem;
+    max-height: none;
+}
+
+.ufx-unique-modal .ufx-unique-accordion {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.ufx-unique-modal.active {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.ufx-unique-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--secondary-green);
+    padding: 1rem 1.5rem;
+}
+
+.ufx-unique-modal-header .ufx-unique-h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-shade);
+}
+
+.ufx-unique-accordion-item {
+    border-bottom: 1px solid var(--highlight-teal);
+}
+
+.ufx-unique-accordion-header {
+    padding: 1rem 1.5rem;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.ufx-unique-accordion-header:hover {
+    background-color: #e6f3e6;
+}
+
+.ufx-unique-accordion-header .ufx-unique-h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--dark-shade);
+}
+
+.ufx-unique-accordion-header i {
+    transition: transform 0.3s ease;
+    color: var(--secondary-green);
+}
+
+.ufx-unique-accordion-item.active .ufx-unique-accordion-header i {
+    transform: rotate(180deg);
+}
+
+.ufx-unique-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out, padding 0.25s ease-in-out;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.ufx-unique-accordion-item.active .ufx-unique-accordion-content {
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    max-height: none;
+}
+ 
+/* Tooltip Section inside Sidebar */
+.tooltip-section {
+    position: relative;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Tooltip Category Buttons */
+.tooltip-category {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.tooltip-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.tooltip-btn:hover {
+    transform: scale(1.2);
+    background: #f0f0f0;
+}
+
+.tooltip-box {
+    position: absolute;
+    bottom: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    color: #0F1A2B;
+    background-color: #defff2;
+    border: 2px solid #104430;
+    padding: 15px;
+    margin-left: 30px;
+    border-radius: 10px;
+    width: 200px;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    text-align: center;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+    .tooltip-box {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 280px;
+        max-width: 300px;
+    }
+}
+
+.tooltip-box button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    font-size: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+}
+
+.tooltip-box button:hover {
+    background-color: red;
+}
+
+/* Style for "Learn More" Link */
+.tooltip-box a {
+    color: #2EAF7D;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.tooltip-box a:hover {
+    color: #24805d;
+    text-decoration: underline;
+}
+
+.ufx-unique-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.ufx-unique-sidebar label {
+    color: white !important;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 6px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-green);
+    border-radius: 5px;
+    min-height: 24px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+* {
+    scrollbar-color: var(--accent-green) transparent;
+}
+
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

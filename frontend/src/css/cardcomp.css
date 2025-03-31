@@ -1,0 +1,77 @@
+.custom-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Ensures equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     /* Keep all your existing styles */
+     position: relative; /* Add this */
+     min-height: 250px; /* Add minimum height */
+     padding-bottom: 70px; /* Make room for fixed button */
+  }
+  
+.card-body {
+  height: 100%; /* Add this */
+}
+  .custom-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(to right, #000000, #040404);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+  
+  .card-items {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #353535;
+  }
+  
+  .card-items li {
+    margin-bottom: 8px;
+  }
+  
+  .custom-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+  background-color: #0b8b57; /* Green */
+    
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+     /* Keep all your existing styles */
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: calc(100% - 40px); /* Account for card padding */
+     max-width: 200px; /* Optional max width */
+     margin-top: 0; /* Remove previous margin */
+  }
+  .card-emoji {
+  font-size: 50px;  /* Big emoji */
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+  
+  .custom-btn:hover {
+    background: #0c664e;
+  }
+  
